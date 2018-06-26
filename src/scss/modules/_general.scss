@@ -1,0 +1,13 @@
+body {
+    background-color: $mainColor;
+    h1{
+        color: $secondaryColor
+    }
+}
+
+.overlay-img {
+    min-height: 250px;
+    background-image: url('#{$imgPath}ogo.png');
+    background-size: cover;
+    
+}

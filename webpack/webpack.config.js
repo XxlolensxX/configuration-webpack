@@ -1,0 +1,112 @@
+const path = require('path');
+const MiniCssExtractTextPlugin = require('mini-css-extract-plugin');
+
+module.exports = {
+  mode: 'development',
+  devtool: "source-map",
+  entry: path.resolve(__dirname, '../src/js/main.js'),
+  output: {
+    path: path.resolve(__dirname, '../dist/js'),
+    filename: '[name].js',
+    publicPath: 'dist/'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,  
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader', 
+            options: {
+              presets: ['babel-preset-env','babel-preset-es2015']
+            }
+          }     
+        },
+        // {
+        //   test: /\.css$/,
+        //   use: [ MiniCssExtractTextPlugin.loader, 
+        //     {
+        //     loader: 'css-loader',
+        //     options: {
+        //       sourceMaps: true,
+        //       //url: false
+        //     }
+        //   }]
+        // },       
+        {
+        //test: tipo de archivo
+        //use: loader que se usará
+        test: /\.s?css$/,  
+        use: [ MiniCssExtractTextPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMaps: true,
+              //url: false
+            }
+          },        
+          { 
+            loader: 'sass-loader',
+            options: {
+              outputStyle: 'compressed',
+              sourceMaps: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(jpg|png|gif|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 1,
+            fallback: 'file-loader',
+            name: '../images/[name].[hash].[ext]',
+            publicPath: 'dist/'
+          }
+        }
+      },
+      // {
+      //   test: /\.(gif|png|jpe?g|svg)$/i,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: '[hash].[ext]',
+      //         outputPath: 'images/'
+      //        }
+      //     },
+      //     {
+      //       loader: 'image-webpack-loader',
+      //       options: {
+      //         mozjpeg: {
+      //           progressive: true,
+      //           quality: 65
+      //         },
+      //         optipng: {
+      //           enabled: false,
+      //         },
+      //         pngquant: {
+      //           quality: '65-90',
+      //           speed: 4
+      //         },
+      //           gifsicle: {
+      //           interlaced: false,
+      //         },
+      //         // the webp option will enable WEBP
+      //         webp: {
+      //           quality: 75
+      //         }
+      //       }
+      //     }
+      //   ]
+      // }
+    ]
+  },
+  plugins: [
+    new MiniCssExtractTextPlugin({
+      filename: '../css/[name].css',
+    })
+  ],
+ 
+}
