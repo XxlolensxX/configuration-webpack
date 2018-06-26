@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractTextPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -106,6 +107,11 @@ module.exports = {
   plugins: [
     new MiniCssExtractTextPlugin({
       filename: '../css/[name].css',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Basic Landing Page',
+      filename: '../index.html',
+      minify: false
     })
   ],
  
