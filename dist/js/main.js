@@ -91,30 +91,9 @@
   !*** ./src/js/main.js ***!
   \************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-__webpack_require__(/*! ./../scss/main.scss */ "./src/scss/main.scss");
-
-//import '../css/main.css'
-// import 'popper.js';
-// import 'jquery';
-// import 'bootstrap';
-
-console.log("Holo Mundo con watch;)");
-
-/***/ }),
-
-/***/ "./src/scss/main.scss":
-/*!****************************!*\
-  !*** ./src/scss/main.scss ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nReferenceError: [BABEL] C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\src\\js\\main.js: Unknown option: C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\react\\index.js.Children. Check out http://babeljs.io/docs/usage/options/ for more information about options.\n\nA common cause of this error is the presence of a configuration options object without the corresponding preset name. Example:\n\nInvalid:\n  `{ presets: [{option: value}] }`\nValid:\n  `{ presets: [['presetName', {option: value}]] }`\n\nFor more detailed information on preset configuration, please see https://babeljs.io/docs/en/plugins#pluginpresets-options. (While processing preset: \"C:\\\\Users\\\\XxlolensxX\\\\Desktop\\\\sites\\\\basic landing one\\\\node_modules\\\\react\\\\index.js\")\n    at Logger.error (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\file\\logger.js:41:11)\n    at OptionManager.mergeOptions (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\file\\options\\option-manager.js:226:20)\n    at C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\file\\options\\option-manager.js:265:14\n    at C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\file\\options\\option-manager.js:323:22\n    at Array.map (<anonymous>)\n    at OptionManager.resolvePresets (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\file\\options\\option-manager.js:275:20)\n    at OptionManager.mergePresets (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\file\\options\\option-manager.js:264:10)\n    at OptionManager.mergeOptions (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\file\\options\\option-manager.js:249:14)\n    at OptionManager.init (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\file\\options\\option-manager.js:368:12)\n    at File.initOptions (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\file\\index.js:212:65)\n    at new File (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\file\\index.js:135:24)\n    at Pipeline.transform (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-core\\lib\\transformation\\pipeline.js:46:16)\n    at transpile (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-loader\\lib\\index.js:50:20)\n    at Object.module.exports (C:\\Users\\XxlolensxX\\Desktop\\sites\\basic landing one\\node_modules\\babel-loader\\lib\\index.js:173:20)");
 
 /***/ })
 
