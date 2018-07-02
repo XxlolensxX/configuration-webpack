@@ -1,11 +1,11 @@
 {
-  "name": "simple-landing-page",
+  "name": "fudi-landing",
   "version": "1.0.0",
   "description": "Single landing page with webpack, reactjs and more",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "webpack --config ./webpack/webpack.config.js"
+    "server": "webpack --config ./webpack/webpack.config.js"
   },
   "author": "Ulises Arratia",
   "license": "MIT",
@@ -14,6 +14,8 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "browser-sync": "^2.24.5",
+    "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
@@ -28,6 +30,9 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "^0.1.0-11",
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",

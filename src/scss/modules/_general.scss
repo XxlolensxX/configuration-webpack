@@ -1,6 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f7f7f7;
+}
+
 .overlay-img {
     min-height: 250px;
-    background-image: url('#{$imgPath}ogo.png');
+    background-image: url('#{$imgPath}/logo.png');
     background-size: cover;
     
 }

@@ -1,0 +1,5 @@
+.Overlay {
+    background-image: url('../../../images/main_image.jpg');
+    background-size: cover; 
+    height: 100%;
+}

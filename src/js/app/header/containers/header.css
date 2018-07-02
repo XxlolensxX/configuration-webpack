@@ -1,0 +1,8 @@
+.Header{
+    width: 100%;
+}
+
+.Header__nav{
+    display: flex;
+    justify-content: space-between;
+}

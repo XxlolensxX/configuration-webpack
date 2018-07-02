@@ -1,20 +1,29 @@
 import './../scss/main.scss';
 //import '../css/main.css'
-import 'popper.js';
-import 'jquery';
-import 'bootstrap';
-
-import React from 'react';
-import { render } from 'react-dom';
-import Title from './app/title/title.jsx';
-import Nav from './app/nav/containers/nav-layout.jsx';
+// import 'popper.js';
+// import 'jquery';
+// import 'bootstrap';
 
 //rendereando un array de componentes[], si son mas de 1
+import React from 'react';
+import { render } from 'react-dom';
 
-render([
-    <Title />,
-    <Nav />    
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisV, faStroopwafel, faLemon, faUtensils } from '@fortawesome/free-solid-svg-icons';
+ 
+library.add(faEllipsisV,faStroopwafel, faLemon, faUtensils)
 
-], document.getElementById('app'));
+//imports components
+import Overlay from './app/overlay/overlay.jsx';
+import Drivers from './app/drivers/containers/drivers.jsx';
 
-console.log("Holo Mundo con watch;)");
+const app = document.getElementById('app');
+
+render(  [
+    <Overlay className="Overlay"/>,
+    <Drivers />
+
+],  app)
+
+console.log("Holo Mundo de;)");

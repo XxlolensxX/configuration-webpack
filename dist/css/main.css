@@ -1,6 +1,14 @@
-.overlay-img{min-height:250px;background-image:url(dist/../images/ogo.b348f406aebeb6a458d783784ab59b32.png);background-size:cover}
+*{padding:0;margin:0}body{background:#f7f7f7}.overlay-img{min-height:250px;background-image:url(../images/logo.png);background-size:cover}
 
-.Title{color:blue}
+.Navigation__ul{display:flex;align-items:center;margin:0}.Navigation__item{list-style:none;padding:15px;font-weight:700}.Navigation__item__a{text-decoration:none;color:white}
+
+.Header{width:100%}.Header__nav{display:flex;justify-content:space-between}
+
+.Banner{color:white;max-height:800px;text-align:center;margin:100px 0}.Banner__epigraph{margin:0;font-size:36px}.Banner__title{margin:0;font-size:100px;text-transform:uppercase}.Banner__button{margin:40px 0 0 0;font-size:18px;color:white;text-transform:uppercase;background:transparent;border:3px solid white;border-radius:5px;appearance:none;padding:20px 76px;cursor:pointer}.Banner__text{margin-top:40px;font-size:14px;text-transform:uppercase}
+
+.Overlay{background-image:url(../images/main_image.jpg);background-size:cover;height:100%}
+
+.Driver{text-align:center}.Driver__icon{color:#f57365;border:1px solid red;border-radius:180px;padding:10px}
 
 
 /*# sourceMappingURL=main.css.map*/

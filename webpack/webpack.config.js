@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractTextPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -60,10 +61,9 @@ module.exports = {
         use: {
           loader: 'url-loader',
           options: {
-            limit: 1,
+            limit: 1000,
             fallback: 'file-loader',
-            name: '../images/[name].[hash].[ext]',
-            publicPath: 'dist/'
+            name: '../images/[name].[ext]',
           }
         }
       },
@@ -73,7 +73,7 @@ module.exports = {
       //     {
       //       loader: 'file-loader',
       //       options: {
-      //         name: '[hash].[ext]',
+      //         name: '[name].[ext]',
       //         outputPath: 'images/'
       //        }
       //     },
@@ -104,16 +104,21 @@ module.exports = {
       // }
     ]
   },
+  watch: true,
   plugins: [
     new MiniCssExtractTextPlugin({
       filename: '../css/[name].css',
     }),
     new HtmlWebpackPlugin({
-      title: 'Basic Landing Page',
+      //title: 'Basic Landing Page',
       filename: '../index.html',
       template: './src/index.html',
       minify: false
+    }),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 9000,
+      server: { baseDir: ['dist'] }
     })
-  ],
- 
+  ]
 }
