@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../dist/js'),
     filename: '[name].js',
-    publicPath: 'dist/'
+    //publicPath: 'dist/'
   },
   module: {
     rules: [
@@ -111,6 +111,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Basic Landing Page',
       filename: '../index.html',
+      template: './src/index.html',
       minify: false
     })
   ],

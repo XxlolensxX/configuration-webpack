@@ -1,12 +1,20 @@
 import './../scss/main.scss';
 //import '../css/main.css'
-// import 'popper.js';
-// import 'jquery';
-// import 'bootstrap';
+import 'popper.js';
+import 'jquery';
+import 'bootstrap';
+
 import React from 'react';
-import { Render } from 'react-dom';
-import HelloWorld from './components/basic_component/helloWorld.jsx';
+import { render } from 'react-dom';
+import Title from './app/title/title.jsx';
+import Nav from './app/nav/containers/nav-layout.jsx';
 
+//rendereando un array de componentes[], si son mas de 1
 
-Render(<HelloWorld />, document.getElementById('app'));
+render([
+    <Title />,
+    <Nav />    
+
+], document.getElementById('app'));
+
 console.log("Holo Mundo con watch;)");
