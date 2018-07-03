@@ -4,10 +4,10 @@ import Driver from '../components/driver.jsx';
 class Drivers extends Component {
     render(){
         return (
-            <div className="container">
-                
+            <div className="horizon">
+                <div className="container">
                     <Driver />
-               
+                </div>
             </div>
         )
     }

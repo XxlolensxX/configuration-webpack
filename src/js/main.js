@@ -17,12 +17,14 @@ library.add(faEllipsisV,faStroopwafel, faLemon, faUtensils)
 //imports components
 import Overlay from './app/overlay/overlay.jsx';
 import Drivers from './app/drivers/containers/drivers.jsx';
+import About from './app/about/containers/about.jsx';
 
 const app = document.getElementById('app');
 
 render(  [
-    <Overlay className="Overlay"/>,
-    <Drivers />
+    <Overlay />,
+    <Drivers />,
+    <About />
 
 ],  app)
 

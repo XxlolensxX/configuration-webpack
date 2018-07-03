@@ -24891,6 +24891,131 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./src/images/iphone.png":
+/*!*******************************!*\
+  !*** ./src/images/iphone.png ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "../images/iphone.png";
+
+/***/ }),
+
+/***/ "./src/js/app/about/containers/about.css":
+/*!***********************************************!*\
+  !*** ./src/js/app/about/containers/about.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/js/app/about/containers/about.jsx":
+/*!***********************************************!*\
+  !*** ./src/js/app/about/containers/about.jsx ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _iphone = __webpack_require__(/*! ./../../../../images/iphone.png */ "./src/images/iphone.png");
+
+var _iphone2 = _interopRequireDefault(_iphone);
+
+__webpack_require__(/*! ./about.css */ "./src/js/app/about/containers/about.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var About = function (_Component) {
+    _inherits(About, _Component);
+
+    function About() {
+        _classCallCheck(this, About);
+
+        return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+    }
+
+    _createClass(About, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'horizon horizon--npb bg-gray' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row About' },
+                        _react2.default.createElement(
+                            'figure',
+                            { className: 'col-sm-5 About__img-container' },
+                            _react2.default.createElement('img', { className: 'About__img', src: _iphone2.default, alt: '' })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-sm-7 About__content' },
+                            _react2.default.createElement(
+                                'h2',
+                                { className: 'Section__title' },
+                                'Introducing the FUDI App'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest ibulum tristique. Suspendisse tristique lacus ac mattis porta.'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices ante, a mattis massa. '
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'About__buttons' },
+                                _react2.default.createElement('a', { href: '#', className: 'About__button app-button--google-play', title: 'lorem ipsum' }),
+                                _react2.default.createElement('a', { href: '#', className: 'About__button app-button--apple-store', title: 'lorem ipsum' })
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return About;
+}(_react.Component);
+
+exports.default = About;
+
+/***/ }),
+
 /***/ "./src/js/app/banner/containers/banner.css":
 /*!*************************************************!*\
   !*** ./src/js/app/banner/containers/banner.css ***!
@@ -25025,9 +25150,13 @@ var Driver = function Driver() {
             'div',
             { className: 'col-sm-4 Driver' },
             _react2.default.createElement(
-                'span',
+                'div',
                 { className: 'Driver__icon' },
-                _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: 'stroopwafel' })
+                _react2.default.createElement(
+                    'span',
+                    { className: 'Driver__icon--border' },
+                    _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: 'stroopwafel' })
+                )
             ),
             _react2.default.createElement(
                 'h2',
@@ -25044,9 +25173,13 @@ var Driver = function Driver() {
             'div',
             { className: 'col-sm-4 Driver' },
             _react2.default.createElement(
-                'span',
+                'div',
                 { className: 'Driver__icon' },
-                _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: 'lemon' })
+                _react2.default.createElement(
+                    'span',
+                    { className: 'Driver__icon--border' },
+                    _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: 'lemon' })
+                )
             ),
             _react2.default.createElement(
                 'h2',
@@ -25063,9 +25196,13 @@ var Driver = function Driver() {
             'div',
             { className: 'col-sm-4 Driver' },
             _react2.default.createElement(
-                'span',
+                'div',
                 { className: 'Driver__icon' },
-                _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: 'utensils' })
+                _react2.default.createElement(
+                    'span',
+                    { className: 'Driver__icon--border' },
+                    _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: 'utensils' })
+                )
             ),
             _react2.default.createElement(
                 'h2',
@@ -25131,8 +25268,12 @@ var Drivers = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'container' },
-                _react2.default.createElement(_driver2.default, null)
+                { className: 'horizon' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(_driver2.default, null)
+                )
             );
         }
     }]);
@@ -25443,6 +25584,10 @@ var _drivers = __webpack_require__(/*! ./app/drivers/containers/drivers.jsx */ "
 
 var _drivers2 = _interopRequireDefault(_drivers);
 
+var _about = __webpack_require__(/*! ./app/about/containers/about.jsx */ "./src/js/app/about/containers/about.jsx");
+
+var _about2 = _interopRequireDefault(_about);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faEllipsisV, _freeSolidSvgIcons.faStroopwafel, _freeSolidSvgIcons.faLemon, _freeSolidSvgIcons.faUtensils);
@@ -25459,7 +25604,7 @@ _fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faEllipsisV, _freeSolidSvgIco
 
 var app = document.getElementById('app');
 
-(0, _reactDom.render)([_react2.default.createElement(_overlay2.default, { className: 'Overlay' }), _react2.default.createElement(_drivers2.default, null)], app);
+(0, _reactDom.render)([_react2.default.createElement(_overlay2.default, null), _react2.default.createElement(_drivers2.default, null), _react2.default.createElement(_about2.default, null)], app);
 
 console.log("Holo Mundo de;)");
 

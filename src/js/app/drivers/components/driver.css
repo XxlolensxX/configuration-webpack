@@ -2,9 +2,34 @@
     text-align: center;
 }
 
+.Driver__icon,.Driver__title,.Driver__text {
+    margin: 10px 0;
+}
+
 .Driver__icon{
     color: #f57365;
-    border: 1px solid red;
-    border-radius: 180px;
-    padding: 10px;
+    font-size: 50px; 
+    margin-top: 0;
+  
+}
+
+.Driver__icon span {
+    border-radius: 360px;
+    padding: 16px 8px;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.Driver__icon--border {
+    border: 2px solid black;
+}
+
+.Driver__title {
+    font-size: 18px;
+    border-bottom: 1px solid red;
+    display: inline-block;
+    padding-bottom: 12px;
 }

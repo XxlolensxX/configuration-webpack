@@ -1,4 +1,4 @@
-*{padding:0;margin:0}body{background:#f7f7f7}.overlay-img{min-height:250px;background-image:url(../images/logo.png);background-size:cover}
+*{padding:0;margin:0}.overlay-img{min-height:250px;background-image:url(../images/logo.png);background-size:cover}.bg-gray{background-color:#f7f7f7}.horizon{padding:100px 0}.horizon--npb{padding-bottom:0}.Section__title{font-size:18px;text-transform:uppercase;font-weight:700;padding-bottom:12px;position:relative}.Section__title::after{content:'';position:absolute;background-color:#f57365;display:inline-block;height:3px;width:100px;left:0;bottom:0}
 
 .Navigation__ul{display:flex;align-items:center;margin:0}.Navigation__item{list-style:none;padding:15px;font-weight:700}.Navigation__item__a{text-decoration:none;color:white}
 
@@ -8,7 +8,9 @@
 
 .Overlay{background-image:url(../images/main_image.jpg);background-size:cover;height:100%}
 
-.Driver{text-align:center}.Driver__icon{color:#f57365;border:1px solid red;border-radius:180px;padding:10px}
+.Driver{text-align:center}.Driver__icon,.Driver__title,.Driver__text{margin:10px 0}.Driver__icon{color:#f57365;font-size:50px;margin-top:0}.Driver__icon span{border-radius:360px;padding:16px 8px;display:flex;justify-content:center;width:25%;margin:0 auto;align-items:center}.Driver__icon--border{border:2px solid black}.Driver__title{font-size:18px;border-bottom:1px solid red;display:inline-block;padding-bottom:12px}
+
+.About__img-container{margin:0}.About__img{width:100%}.About__content{padding:50px 0 0 100px}.About__buttons{display:flex}.About__button{width:130px;height:39px;display:block}.app-button--google-play{background-image:url(../images/google-play.png);background-repeat:no-repeat}.app-button--apple-store{background-image:url(../images/apple-store.png);background-repeat:no-repeat}
 
 
 /*# sourceMappingURL=main.css.map*/

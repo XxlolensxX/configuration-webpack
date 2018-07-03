@@ -1,0 +1,31 @@
+.About__img-container{
+    margin: 0;
+}
+
+.About__img{
+    width: 100%;
+}
+
+.About__content{
+    padding: 50px 0 0 100px;
+}
+
+.About__buttons{
+    display: flex;
+}
+
+.About__button{
+    width: 130px;
+    height: 39px;
+    display: block;
+}
+
+.app-button--google-play {
+    background-image: url('./../../../../images/google-play.png');
+    background-repeat: no-repeat; 
+}
+
+.app-button--apple-store {
+    background-image: url('./../../../../images/apple-store.png');
+    background-repeat: no-repeat; 
+}
